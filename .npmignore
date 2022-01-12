@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+install.js
+example
+node_modules/
+babel.config.js
+src
+install.js

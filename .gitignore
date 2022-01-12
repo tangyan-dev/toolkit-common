@@ -1,0 +1,9 @@
+.history
+.DS_Store
+.vscode
+*.log
+package-lock.json
+node_modules
+packages/test
+dist
+temp

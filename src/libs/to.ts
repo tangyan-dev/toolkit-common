@@ -1,0 +1,1 @@
+export const to = (promise: Promise<any>) => promise.then(res => [null, res]).catch(err => [err, null]);

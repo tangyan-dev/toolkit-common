@@ -1,0 +1,30 @@
+{
+  "name": "@tangyansoft/toolkit-common",
+  "version": "0.1.0",
+  "description": "",
+  "author": "The tangyan soft Team (https://tangyan.dev)",
+  "scripts": {
+    "dev": "node install.js && concurrently \"babel ./src -w --out-dir ./dist --extensions .ts\" \"cd example && npm run dev\"",
+    "build": "rm -rf dist && npx babel ./src --out-dir ./dist --extensions .ts",
+    "prepublish": "npm run build",
+    "install": "node check.js"
+  },
+  "main": "dist/index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.15.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "babel-preset-minify": "^0.5.1",
+    "concurrently": "^6.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "typescript": "^4.3.5"
+  }
+}
